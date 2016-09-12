@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="Calculator">
+<head>
+    <title>Calculator</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <pre><b>Calculator proto with base64 coding</b></pre>
+    <div ng-controller="CalculatorController">
+        <pre>TODO: server, with response with base64 decoding and coding, support to "()" functionalities</pre>
+        <input type="text" ng-change="onChangeValue()" ng-model="displayValue">
+        <div>{{result}}</div>
+        <div>{{calculationString}}</div>
+        <div> Value coded below with Base64</div>
+        <div>{{coded_result}}</div>
+        <div> Coded value decoded back to string </div>
+        <div>{{decoded_result}}</div>
+
+        <button class="btn" type="button" ng-click="onClickClear()">C</button>
+        <button class="btn" type="button" ng-click="onClickSum()">+</button>
+        <button class="btn" type="button" ng-click="onClickSubtract()">-</button>
+        <button class="btn" type="button" ng-click="onClickMultiply()">*</button>
+        <button class="btn" type="button" ng-click="onClickDivide()">/</button>
+        <button class="btn" type="button" ng-click="onClickCalculate()">=</button>
+
+        <button id="httpPost" ng-click="SendData()">$http get, will be implemented to Post and to calculate func</button>
+        <pre>http response data: {{responsedata}}</pre>
+        <pre>http decoded response data: {{decodedresponse}}</pre>
+
+    </div>
+
+    <!-- Dependencies -->
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-base64/angular-base64.js"></script>
+
+    <!-- App -->
+    <script type="text/javascript" src="js/Calculator.js"></script>
+
+</body>
+</html>
