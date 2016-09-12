@@ -1,6 +1,13 @@
 {
-  "name": "TEST",
-  "version": "0.0.1",
-  "engines": {
-    "node": "6.5.0"
+  "name": "Angular 1.4.8 Calculator proto",
+  "description": "kalle vuorinen angular 1.4 proto",
+  "dependencies": {
+    "angular": "~1.4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CalebVuorinen/CalculatorProto.git"
+  },
+  "author": "Kalle Vuorinen",
+  "license": "MIT"
 }
