@@ -1,0 +1,6 @@
+{
+  "name": "TEST",
+  "version": "0.0.1",
+  "engines": {
+    "node": "6.5.0"
+}
