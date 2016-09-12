@@ -1,5 +1,6 @@
 # CalculatorProto
 TODO:
+  - FIX PACKAGE.JSON 
   - Server support - real responses, not dummy
   - Move base64 coding behind server
   - Add support to "()" functions
